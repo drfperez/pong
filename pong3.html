@@ -1,54 +1,28 @@
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Welcome to my Website</title>
-  </head>
+<!DOCTYPE html><html><head>
+<!-- aixó es un document html que s'ha anomena index.html perquè és el primer que s'ha d'obrir pel navegador i de la línia 7 a la
+línia 10 hi ha la connexió amb la biblioteca o les biblioteques p5 de javascript que permet que funcionin el codi del rectangle,
+rect, que entengui el que és keyPressed i keyReleased que significa tecla apretada o tecla alliberada o que significa UP_ARROW que significa fletxa cap amunt i molts altres codis. Gràcies a p5 ho entenc tot.
+Index és la unió de tots els arxius necessaris per a produir una bola (Ball.js), dues pales (Paddle.js), la puntuació (Score.js) i per últim Sketch.js, que uneix tots els arxius javascript i dona lògica al joc, per exemple, els xocs entre la pala i la bola que produeixen un canvi de direcció de la bola o la puntuacióo de cada jugador quan no hi ha un xoc, cosa que fa augmentar la puntuació.
+
+-->
+   <script src="../lib/p5.min.js"></script>
+   <script src="../lib/p5.dom.min.js"></script>
+   <script src="../lib/p5.sound.min.js"></script>
+   <!-- La línia 15 està escrita en un altre arxiu que es diu style.css que està escrit en un llenguatge diferent anomenat css que significa cascade style sheetss o fulles d'estil en cascada que el que fa és treure tots els marges i contorns i fer que és vegi el joc correctament. La línia 16 fa que el conjunt de caràcters que accepti sigui els caràcters llatins i gracs del nostre alfabet. Charset vol dir set o conjunt de char o caràcter i meta vol dir metainformació, és a dir, informació per als programadors, no per als usuaris.
+   
+   
+   -->
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <meta charset="utf-8">
+   
+   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="logo.png" alt="" width="50" height="50" class="d-inline-block align-text-center">
-      Carla website
-    </a>
- 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./ml5jstemplate">ml5.js template</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            My codes
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="./face">Face with interaction</a></li>
-            <li><a class="dropdown-item" href="./facedata">Face with external data</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Different topic</a></li>
-          </ul>
-        </li>
-        
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-<h1>Pong game</h1>
-</body>
-</html>
+  <!-- La línia 22, 23, 24, i 25 hi ha quatre codis javascript, creats per nosaltres a diferència del p5 que ja està inventat. El codi principal sempre és diu sketch.js, el codi Ball.js és el codi de la pilota, i s'escriu en majúscula perquè és una classe, és a dir, que podem crear objectes d'aqesta classe: pilotes. Score.js és el codi que dona la puntuació i permet crear dos objectes, un objecte és la puntuacióo del jugador i un altre la de la Ai o intel·ligència artificial. Paddle.js crearà dues pales, una la del jugador i un altre la de la intel·ligència artificial 
+  -->
+   <script src="sketch.js"></script> 
+   <script src="Ball.js"></script>
+   <script src="Paddle.js"></script>  
+   
+   
+   </body></html>
